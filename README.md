@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# React 實作：部落格
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+以 React Hook 與 api 操作為主的部落格練習。
 
-## Available Scripts
+[Demo]()
 
-In the project directory, you can run:
+![使用截圖]()
 
-### `npm start`
+## 部落格功能
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 註冊機制：使用者可經註冊後發表分享文章
+- 登入機制：使用者註冊後可登入/登出
+- 發表分享文章：新增、編輯（標題、內文）
+- 首頁：可見最新五篇分享文章
+- 「關於」頁面：簡介
+- 分享文章列表：顯示所有分享文章
+- 學習心得列表：顯示所有學習心得
+- read more 功能：點擊首頁各篇文章、分享文章列表與學習心得列表之文章標題，可進入該文章全文頁面。
+- 分頁機制：於分享文章列表與學習心得列表點擊頁面下方按鈕可進入前/後一頁以顯示前/後五篇文章，並可進入首頁與尾頁。
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## 使用技術
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 主要為 React Hook 
+- JavaScript / ES6
+- 採用 JSX 語法撰寫元件
+- 使用 styled-component
+- 
 
-### `npm run build`
+## 專案結構
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+├── src                     
+    ├── contexts.js
+    ├── index.js               
+    ├── utils.js       
+    ├── reportWebVitals.js             
+    ├── setupTests.js
+    ├── utils.js
+    ├── WebAPI.js
+    ├── components 
+    │    ├── App
+    │    │   ├── App.css
+    │    │   ├── App.js
+    │    │   ├── App.test.js
+    │    │   └── index.css
+    │    ├── Footer
+    │    │   ├── Footer.js
+    │    │   └── index.js
+    │    └── Header
+    │        ├── Header.js
+    │        └── index.js
+    └── pages
+         ├── AboutPage
+         │   ├── AboutPage.js
+         │   └── index.js
+         ├── HomePage
+         │   ├── HomePage.js
+         │   └── index.js
+         ├── IssuePage
+         │   ├── IssuePage.js
+         │   └── index.js
+         ├── LearningnotesList
+         │   ├── LearningnotesList.js
+         │   └── index.js
+         ├── LoginPage
+         │   ├── LoginPage.js
+         │   └── index.js
+         ├── NewPostPage
+         │   ├── NewPostPage.js
+         │   └── index.js
+         ├── PostListPage
+         │   ├── PostListPage.js
+         │   └── index.js
+         ├── PostPage
+         │   ├── PostPage.js
+         │   └── index.js
+         └── RegisterPage
+             ├── RegisterPage.js
+             └── index.js
