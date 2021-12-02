@@ -6,8 +6,9 @@
 
 ![首頁截圖](https://images.plurk.com/4QvsBCXcqMcrEJa7zuSEAA.png)
 
-## 部落格功能
+## 部落格功能與特色
 
+- 串接的 API：Lidemy 學生專用 API Server、GitHub REST API
 - 註冊機制：使用者可經註冊後發表分享文章。
 - 登入機制：使用者註冊後可登入/登出。
 - 發表分享文章：新增、編輯（標題、內文）。
